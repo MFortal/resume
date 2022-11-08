@@ -5,6 +5,10 @@ $color_grey: #f1f1f1;
 $color_black: black;
 $color_orange: #fda300;
 $color_active: #606060;
+$color_btn: #070707;
+$color_btn_hover: #323232;
+$color_btn_text: white;
+$color_footer_text: #828282;
 
 body {
   font-family: "Poppins", sans-serif;
@@ -20,6 +24,30 @@ body {
 .title-1 {
   font-size: 34px;
   font-weight: 600;
+}
+
+.button {
+  display: inline-block;
+  background-color: $color_btn;
+  padding: 7px 22px;
+  border-radius: 30px;
+
+  font-size: 18px;
+  color: $color_btn_text;
+
+  transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $color_btn_hover;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+
+  background-color: $color_black;
 }
 
 /* Header */
@@ -158,4 +186,36 @@ body {
 .project-title a {
   color: $color_black;
   text-decoration: underline;
+}
+
+/* Footer */
+.contacts {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.contacts-title {
+  margin-bottom: 40px;
+}
+
+.contacts-content {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.contacts-button {
+  margin-bottom: 80px;
+}
+
+.contacts-social {
+  display: flex;
+  justify-content: center;
+  column-gap: 60px;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.contacts-footer {
+  color: $color_footer_text;
 }
