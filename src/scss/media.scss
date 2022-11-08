@@ -75,4 +75,20 @@
   .services {
     padding: 60px 0;
   }
+
+  .portfolio {
+    padding: 60px 0;
+  }
+
+  .portfolio-title {
+    margin-bottom: 50px;
+  }
+
+  .portfolio-img {
+    margin-bottom: 30px;
+  }
+
+  .project + .project {
+    margin-top: 55px;
+  }
 }
