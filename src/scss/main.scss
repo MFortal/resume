@@ -17,6 +17,11 @@ body {
   margin: 0 auto;
 }
 
+.title-1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
 /* Header */
 .header {
   background-color: $color_grey;
@@ -120,4 +125,37 @@ body {
 
 .service-card-text {
   line-height: 2;
+}
+
+/* Portfolio */
+
+.portfolio {
+  background-color: $color_grey;
+  padding: 90px 0;
+}
+
+.portfolio-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.project {
+  text-align: center;
+}
+
+.project + .project {
+  margin-top: 90px;
+}
+
+.project-img {
+  margin-bottom: 40px;
+}
+
+.project-title {
+  font-size: 18px;
+}
+
+.project-title a {
+  color: $color_black;
+  text-decoration: underline;
 }
