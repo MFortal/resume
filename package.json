@@ -14,5 +14,8 @@
   "devDependencies": {
     "pug": "^3.0.2",
     "sass": "^1.56.0"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
   }
 }

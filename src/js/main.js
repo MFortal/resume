@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "../scss/reset.scss";
 import "../scss/main.scss";
 import "../scss/media.scss";
@@ -10,3 +13,5 @@ navBtn.onclick = () => {
     ? navBtn.classList.add("close")
     : navBtn.classList.remove("close");
 };
+
+AOS.init();

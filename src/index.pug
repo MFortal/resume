@@ -23,28 +23,27 @@ html(lang="en")
                   li.nav-item 
                     a.nav-link(href='#') Contact
                 button#nav-btn.nav-button 
-                  
             .header-row
-              .header-content
+              .header-content(data-aos='fade-up')
                 h1.header-heading Kelvin Kramer<br>
                  span Designer & Developer
                 p.header-text I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.
-              .header-img
+              .header-img(data-aos='fade-left')
                 picture
                   source(media="(max-width:799px)" srcset="./img/header/hero-mobile.png")
                   img(src='./img/header/hero.png')
         section.services
           .container 
             .services-row 
-              .service-card
+              .service-card(data-aos='fade-down')
                 img.service-card-img(src="./img/services/01.svg", alt="")
                 h3.service-card-title UI/UX Design
                 p.service-card-text Our design is translated into comprehensive digital environments built on latest development standards.
-              .service-card
+              .service-card(data-aos='fade-down')
                 img.service-card-img(src="./img/services/02.svg", alt="")
                 h3.service-card-title Development
                 p.service-card-text Our design is translated into comprehensive digital environments built on latest development standards.
-              .service-card
+              .service-card(data-aos='fade-down')
                 img.service-card-img(src="./img/services/03.svg", alt="")
                 h3.service-card-title software testing
                 p.service-card-text Our design is translated into comprehensive digital environments built on latest development standards.
@@ -52,15 +51,15 @@ html(lang="en")
           .container 
             .portfolio-title 
               h2.title-1 Portfolio
-            .project
+            .project(data-aos='flip-up')
               img.project-img(src='./img/portfolio/01.jpg' alt='Online fashion store - Homepage')
               h3.project-title 
                 a(href='#') Online fashion store - Homepage
-            .project
+            .project(data-aos='flip-up')
               img.project-img(src='./img/portfolio/02.jpg' alt='Reebok Store - Concept')
               h3.project-title 
                 a(href='#') Reebok Store - Concept           
-            .project
+            .project(data-aos='flip-up')
               img.project-img(src='./img/portfolio/03.jpg' alt='Braun Landing Page - Concept')
               h3.project-title 
                 a(href='#') Braun Landing Page - Concept
@@ -68,11 +67,11 @@ html(lang="en")
           .container
             .contacts-title
               h2.title-1 Contacts 
-            .contacts-content
+            .contacts-content(data-aos='fade-down')
               p Want to know more or just chat?<br> You are welcome!
-            .contacts-button
+            .contacts-button(data-aos='fade-down')
               a.button(href="#!") Send message
-            .contacts-social
+            .contacts-social(data-aos='zoom-in')
               a(href="#")
                 img(src='./img/socials/LinkedIn.svg' alt='LinkedIn')
               a(href="#")
@@ -81,6 +80,6 @@ html(lang="en")
                 img(src='./img/socials/Behance.svg' alt='Behance')
               a(href="#")
                 img(src='./img/socials/Dribble.svg' alt='Dribble')
-            .contacts-footer
+            .contacts-footer(data-aos='fade-up')
               p Like me on <br> LinkedIn, Instagram, Behance, Dribble
         script(src='./js/main.js')
