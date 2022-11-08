@@ -10,7 +10,7 @@ html(lang="en")
           .container
             .header-nav
               a.logo(href="#") Kelvin 
-              nav.nav
+              nav#nav.nav
                 ul.nav-list
                   li.nav-item 
                     a.nav-link.nav-link__active(href='#') Home
@@ -22,12 +22,17 @@ html(lang="en")
                     a.nav-link(href='#') About
                   li.nav-item 
                     a.nav-link(href='#') Contact
+                button#nav-btn.nav-button 
+                  
             .header-row
               .header-content
-                h1.header-heading Kelvin Kramer<br>Designer & Developer
+                h1.header-heading Kelvin Kramer<br>
+                 span Designer & Developer
                 p.header-text I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.
               .header-img
-                img(src='./img/header/hero.png')
+                picture
+                  source(media="(max-width:799px)" srcset="./img/header/hero-mobile.png")
+                  img(src='./img/header/hero.png')
         section.services
           .container 
             .services-row 

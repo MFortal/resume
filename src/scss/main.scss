@@ -1,14 +1,5 @@
-@import "./reset.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
-$color_grey: #f1f1f1;
-$color_black: black;
-$color_orange: #fda300;
-$color_active: #606060;
-$color_btn: #070707;
-$color_btn_hover: #323232;
-$color_btn_text: white;
-$color_footer_text: #828282;
+@import "./colors.scss";
 
 body {
   font-family: "Poppins", sans-serif;
@@ -94,6 +85,20 @@ body {
   gap: 50px;
   font-weight: 500;
   font-size: 14px;
+}
+
+.nav-button {
+  display: none;
+  width: 33px;
+  height: 20px;
+  background: no-repeat center center;
+  background-image: url("../img/icons/nav-open.svg");
+}
+
+.nav-button.close {
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icons/nav-close.svg");
 }
 
 .nav-link {
