@@ -4,7 +4,43 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
+        title Портфолио
     body
-        h1 Hello Parcel!
+        header.header
+          .container
+            .header-nav
+              a.logo(href="#") Kelvin 
+              nav.nav
+                ul.nav-list
+                  li.nav-item 
+                    a.nav-link.nav-link__active(href='#') Home
+                  li.nav-item 
+                    a.nav-link(href='#') Works
+                  li.nav-item 
+                    a.nav-link(href='#') Services
+                  li.nav-item 
+                    a.nav-link(href='#') About
+                  li.nav-item 
+                    a.nav-link(href='#') Contact
+            .header-row
+              .header-content
+                h1.header-heading Kelvin Kramer<br>Designer & Developer
+                p.header-text I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.
+              .header-img
+                img(src='./img/header/hero.png')
+        section.services
+          .container 
+            .services-row 
+              .service-card
+                img.service-card-img(src="./img/services/01.svg", alt="")
+                h3.service-card-title UI/UX Design
+                p.service-card-text Our design is translated into comprehensive digital environments built on latest development standards.
+              .service-card
+                img.service-card-img(src="./img/services/02.svg", alt="")
+                h3.service-card-title Development
+                p.service-card-text Our design is translated into comprehensive digital environments built on latest development standards.
+              .service-card
+                img.service-card-img(src="./img/services/03.svg", alt="")
+                h3.service-card-title software testing
+                p.service-card-text Our design is translated into comprehensive digital environments built on latest development standards.
         script(src='./js/main.js')

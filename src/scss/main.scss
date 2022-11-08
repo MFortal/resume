@@ -1,5 +1,123 @@
-$color_h1: tomato;
+@import "./reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-h1 {
-  color: $color_h1;
+$color_grey: #f1f1f1;
+$color_black: black;
+$color_orange: #fda300;
+$color_active: #606060;
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $color_black;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: $color_grey;
+  padding-top: 46px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 76px;
+}
+
+/* Logo */
+.logo {
+  position: relative;
+
+  padding: 0 12px 3px 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: $color_black;
+}
+
+.logo::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: $color_orange;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Navigation */
+.nav-list {
+  display: flex;
+  gap: 50px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-link {
+  color: $color_black;
+}
+
+.nav-link__active {
+  color: $color_active;
+}
+
+/* Header Content */
+.header-row {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.header-content {
+  max-width: 500px;
+  margin-top: 124px;
+}
+
+.header-heading {
+  font-weight: 600;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  line-height: 2;
+}
+
+/* Services */
+.services {
+  padding: 90px 0;
+}
+
+.services-row {
+  display: flex;
+  gap: 30px;
+}
+
+.service-card {
+  text-align: center;
+}
+
+.service-card-img {
+  margin-bottom: 30px;
+}
+
+.service-card-title {
+  font-weight: 600px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.service-card-text {
+  line-height: 2;
 }
