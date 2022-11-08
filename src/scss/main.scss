@@ -138,11 +138,15 @@ body {
 
 .services-row {
   display: flex;
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 60px;
+  flex-wrap: wrap;
 }
 
 .service-card {
   text-align: center;
+  flex: 1 1 0;
+  min-width: 315px;
 }
 
 .service-card-img {
